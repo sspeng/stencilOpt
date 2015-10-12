@@ -1,0 +1,146 @@
+pmem with clflush:
+
+xiszishu@xiszishu-OptiPlex-9020:~/ProjectHPC/work$ ./a.out
+logtime: 7
+logtime: 14
+logtime: 22
+logtime: 29
+logtime: 37
+logtime: 45
+logtime: 53
+logtime: 61
+logtime: 68
+logtime: 76
+logtime: 84
+logtime: 92
+logtime: 100
+logtime: 107
+logtime: 115
+logtime: 123
+logtime: 131
+logtime: 139
+logtime: 146
+logtime: 154
+logtime: 162
+logtime: 170
+logtime: 178
+logtime: 186
+logtime: 193
+time in seconds [0]:  0.172884400000000
+time in seconds [1]:  0.166149200000000
+time in seconds [2]:  0.167101200000000
+time in seconds [3]:  0.166709200000000
+time in seconds [4]:  0.167215400000000
+Minimum time in seconds:  0.166149200000000
+Maximum time in seconds:  0.172884400000000
+Average time in seconds:  0.168011880000000
+Maximum MFLOPS: 4087.948073177601600
+Minimum MFLOPS: 3928.690512272941305
+Average MFLOPS: 4042.626640449472234
+Configuration
+-------------
+CPU MHZ: 0
+Cache Size: 1000
+Cache Flush Method: generic
+ARCH: generic
+nrep: 5
+mt: 5
+
+
+file:
+
+xiszishu@xiszishu-OptiPlex-9020:~/ProjectHPC/stencilOpt$ ./a.out
+logtime: 9
+logtime: 13
+logtime: 16
+logtime: 20
+logtime: 24
+logtime: 28
+logtime: 32
+logtime: 36
+logtime: 40
+logtime: 43
+logtime: 47
+logtime: 51
+logtime: 55
+logtime: 58
+logtime: 62
+logtime: 66
+logtime: 70
+logtime: 73
+logtime: 77
+logtime: 81
+logtime: 85
+logtime: 88
+logtime: 92
+logtime: 96
+logtime: 99
+time in seconds [0]:  0.173408600000000
+time in seconds [1]:  0.167044800000000
+time in seconds [2]:  0.158435800000000
+time in seconds [3]:  0.161474400000000
+time in seconds [4]:  0.158369600000000
+Minimum time in seconds:  0.158369600000000
+Maximum time in seconds:  0.173408600000000
+Average time in seconds:  0.163746640000000
+Maximum MFLOPS: 4288.760608096501528
+Minimum MFLOPS: 3916.814402515215534
+Average MFLOPS: 4147.928177335425062
+Configuration
+-------------
+CPU MHZ: 0
+Cache Size: 1000
+Cache Flush Method: generic
+ARCH: generic
+nrep: 5
+mt: 5
+Random Seed: 1
+
+pmem without clflush:
+./a.out
+logtime: 50
+logtime: 100
+logtime: 150
+logtime: 200
+logtime: 250
+logtime: 300
+logtime: 350
+logtime: 400
+logtime: 450
+logtime: 500
+logtime: 550
+logtime: 600
+logtime: 650
+logtime: 700
+logtime: 750
+logtime: 800
+logtime: 850
+logtime: 900
+logtime: 950
+logtime: 1000
+logtime: 1050
+logtime: 1100
+logtime: 1150
+logtime: 1200
+logtime: 1250
+time in seconds [0]:  0.257035200000000
+time in seconds [1]:  0.256789600000000
+time in seconds [2]:  0.256700600000000
+time in seconds [3]:  0.256444600000000
+time in seconds [4]:  0.257092000000000
+Minimum time in seconds:  0.256444600000000
+Maximum time in seconds:  0.257092000000000
+Average time in seconds:  0.256812400000000
+Maximum MFLOPS: 2648.561529468742719
+Minimum MFLOPS: 2641.892015309695125
+Average MFLOPS: 2644.768328943618599
+Configuration
+-------------
+CPU MHZ: 0
+Cache Size: 1000
+Cache Flush Method: generic
+ARCH: generic
+nrep: 5
+mt: 5
+Random Seed: 1
+
