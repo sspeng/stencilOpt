@@ -62,7 +62,7 @@ void jacobi7_3(const int nx,const int ny,int nz,const double alpha,double * A0,c
 #define Index3D(_nx,_ny,_i,_j,_k) ((_i)+_nx*((_j)+_ny*(_k)))
 int main(int argc, char **argv) 
 {
-  
+    //freopen("output.out","w",stdout);
   /* arrays for storing results of multiple timings */
   double __timer_diff[MT];
   
@@ -129,6 +129,8 @@ int main(int argc, char **argv)
   /* Multiple Timings */
   for (__pt_MT_ivar=0; __pt_MT_ivar<MT; ++__pt_MT_ivar) {
     srand(RANDSEED);
+
+
     for (__pt_i0=0; __pt_i0<Anext_size *Anext_rep; ++__pt_i0)
     {
       Anext_buf[__pt_i0] = rand();; 
